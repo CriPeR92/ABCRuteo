@@ -17,15 +17,23 @@ public class BuscarSlot {
 		this.listaCaminos = null;
 	}
 
+    /**
+     * Se dividen los caminos en una lista
+     */
 	public void procesadoCaminos() {
 		this.listaCaminos = this.caminos.split(";");
 	}
-	
+
+    /**
+     * Se verifica si un camino posible entrara dentro del grafo
+     * @param fs
+     * @param dato
+     * @param caminoAUsar
+     * @return
+     */
 	public resultadoSlot concatenarCaminos(int fs, int dato, int caminoAUsar) {
-		boolean salirdelbucle;
+
 		resultadoSlot resultfalso = null;
-		int contador = 0;
-	//	int[] vectorResultado = new int[g.grafo[0][0].listafs.length];
 		resultadoSlot respuesta = new resultadoSlot();
 		respuesta.vectorAsignacion = new int[g.grafo[0][0].listafs.length];
 		procesadoCaminos();
@@ -41,12 +49,15 @@ public class BuscarSlot {
 			int random = (int)(Math.random() * listaCaminos.length);
 
 			String cam;
+
+			/**
+			 * Se buscara solamente un camino por vez.
+			 */
 			if (dato == 0) {
 				cam = listaCaminos[random];
 				respuesta.caminoUtilizado = random;
 
 			} else if (dato == 3){
-				System.out.println("la longitud del vector es:" + listaCaminos.length + "y queremos la posicion " + caminoAUsar);
 				if (caminoAUsar >= listaCaminos.length || caminoAUsar < 0) {
 					caminoAUsar = listaCaminos.length - 1;
 				}
@@ -56,6 +67,7 @@ public class BuscarSlot {
 			else {
 				cam = listaCaminos[a];
 				respuesta.caminoUtilizado = a;
+				a = listaCaminos.length;
 			}
 
 			String[] caminos;
