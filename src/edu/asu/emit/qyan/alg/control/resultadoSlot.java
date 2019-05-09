@@ -11,6 +11,7 @@ public class resultadoSlot {
 	int indice;
 	int contador;
 	int cantidadfs;
+	int caminoUtilizado;
 	
 	public resultadoSlot() {
 		super();

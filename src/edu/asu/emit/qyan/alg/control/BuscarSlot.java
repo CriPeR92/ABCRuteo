@@ -21,7 +21,7 @@ public class BuscarSlot {
 		this.listaCaminos = this.caminos.split(";");
 	}
 	
-	public resultadoSlot concatenarCaminos(int fs, int dato) {
+	public resultadoSlot concatenarCaminos(int fs, int dato, int caminoAUsar) {
 		boolean salirdelbucle;
 		resultadoSlot resultfalso = null;
 		int contador = 0;
@@ -43,8 +43,19 @@ public class BuscarSlot {
 			String cam;
 			if (dato == 0) {
 				cam = listaCaminos[random];
-			} else {
+				respuesta.caminoUtilizado = random;
+
+			} else if (dato == 3){
+				System.out.println("la longitud del vector es:" + listaCaminos.length + "y queremos la posicion " + caminoAUsar);
+				if (caminoAUsar >= listaCaminos.length || caminoAUsar < 0) {
+					caminoAUsar = listaCaminos.length - 1;
+				}
+			    cam = listaCaminos[caminoAUsar];
+			    a = listaCaminos.length;
+            }
+			else {
 				cam = listaCaminos[a];
+				respuesta.caminoUtilizado = a;
 			}
 
 			String[] caminos;

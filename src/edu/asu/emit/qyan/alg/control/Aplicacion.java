@@ -129,15 +129,16 @@ public class Aplicacion {
 
 			for (int j = 0; j < cantFuente; j++) {
 				BuscarSlot r = new BuscarSlot(fuentes.get(j).grafo, listaCaminos);
-				resultadoSlot res = r.concatenarCaminos(fs,0);
+				resultadoSlot res = r.concatenarCaminos(fs,0, 0);
 
 
 				if (res !=null) {
-					//guardar caminos utilizados
+					//guardar caminos utilizados y el numero de camino utilizado
+					fuentes.get(j).caminoUtilizado.add(res.caminoUtilizado);
 					fuentes.get(j).caminos.add(res.camino);
 					fuentes.get(j).ids.add(id);
 
-					System.out.println(res.toString());
+					//System.out.println(res.toString());
 					Asignacion asignar = new Asignacion(fuentes.get(j).grafo, res);
 					asignar.marcarSlotUtilizados(id);
 				}
@@ -179,7 +180,7 @@ public class Aplicacion {
 
 		}
 
-		System.out.println("asd");
+		//System.out.println("asd");
 
 	}
 
@@ -220,8 +221,16 @@ public class Aplicacion {
 			Random rand = new Random();
 			double alpha = (double)(Math.random() * 2 - 1);
 			int j = rand.nextInt(fuentes.get(i).caminos.size()-1);
-			int k = rand.nextInt(fuentes.get(i).grafo.nodos);
-			borrarConexion(j, i);
+			int k = rand.nextInt(fuentes.get(i).grafo.nodos - 1);
+
+			while (j == k) {
+				k = rand.nextInt(fuentes.get(i).grafo.nodos);
+			}
+
+			System.out.println("las sumas son: " + fuentes.get(i).caminoUtilizado.get(j) + fuentes.get(i).caminoUtilizado.get(j) + fuentes.get(k).caminoUtilizado.get(j));
+			double nroCaminoAserUtilizado = (fuentes.get(i).caminoUtilizado.get(j)) + alpha * ((fuentes.get(i).caminoUtilizado.get(j)) - (fuentes.get(k).caminoUtilizado.get(j)));
+			int caminoAUsar = (int) nroCaminoAserUtilizado;
+			borrarConexion(j, i, caminoAUsar);
 		}
 
 	}
@@ -232,17 +241,12 @@ public class Aplicacion {
 	 * @param nroGrafo
 	 */
 
-	public static void borrarConexion(int nroCamino, int nroGrafo) {
+	public static void borrarConexion(int nroCamino, int nroGrafo, int nroCaminoAUsar) {
 
 		String camino = String.valueOf(fuentes.get(nroGrafo).caminos.get(nroCamino));
-//		String[] caminos = camino.split(":");
-
-//		caminos[0] = caminos[0].replace(",", "");
-//		caminos[0] = caminos[0].replace("[", "");
-//		caminos[0] = caminos[0].replace("]", "");
-//		caminos[0] = caminos[0].replace(" ", "");
 
 		String caminoFinal = camino;
+		System.out.println("el camino es: " + caminoFinal);
 		int inicioSolicitud = (int)caminoFinal.charAt(0) - 48;
 		int finSolicitud = (int)caminoFinal.charAt(caminoFinal.length()-1) - 48;
 
@@ -275,7 +279,7 @@ public class Aplicacion {
 		}
 
 
-		Boolean reasignar = asginar(inicioSolicitud, finSolicitud, nroGrafo, longitud, fuentes.get(nroGrafo).ids.get(nroCamino));
+		Boolean reasignar = asginar(inicioSolicitud, finSolicitud, nroGrafo, longitud, fuentes.get(nroGrafo).ids.get(nroCamino), nroCaminoAUsar);
 
 		if (reasignar) {
 			fuentes.get(nroGrafo).modificado++;
@@ -318,29 +322,30 @@ public class Aplicacion {
 	 * @return
 	 */
 
-	public static Boolean asginar(int inicio, int fin, int nroGrafo, int cantFs, int id) {
-
-
-		YenTopKShortestPathsAlg yenAlg = new YenTopKShortestPathsAlg(graph);
+	public static Boolean asginar(int inicio, int fin, int nroGrafo, int cantFs, int id, int caminoAUsar) {
 
 		String listaCaminos = "";
 
+		String inicioSolicitud = String.valueOf(inicio);
+		String finSolicitud = String.valueOf(fin);
+
 
 		for (int k = 0; k < caminos.size(); k++) {
-			if (caminos.get(k)[0].equals(inicio) && caminos.get(k)[1].equals(fin)) {
+			if (caminos.get(k)[0].equals(inicioSolicitud) && caminos.get(k)[1].equals(finSolicitud)) {
 				listaCaminos = caminos.get(k)[2];
 				break;
 			}
 		}
 
 		BuscarSlot r = new BuscarSlot(fuentes.get(nroGrafo).grafo, listaCaminos);
-		resultadoSlot res = r.concatenarCaminos(cantFs,1);
+		resultadoSlot res = r.concatenarCaminos(cantFs,3, caminoAUsar);
 
 
 		if (res !=null) {
 			//guardar caminos utilizados
-				fuentes.get(nroGrafo).caminos.add(res.camino);
-				fuentes.get(nroGrafo).ids.add(id);
+			fuentes.get(nroGrafo).caminoUtilizado.add(res.caminoUtilizado);
+			fuentes.get(nroGrafo).caminos.add(res.camino);
+			fuentes.get(nroGrafo).ids.add(id);
 			Asignacion asignar = new Asignacion(fuentes.get(nroGrafo).grafo, res);
 			asignar.marcarSlotUtilizados(id);
 		}
@@ -388,7 +393,7 @@ public class Aplicacion {
 
 				if (suma >= nectar) {
 					int j = rand.nextInt(fuentes.get(i).caminos.size()-1);
-					borrarConexion(j, i);
+//					borrarConexion(j, i);
 				}
 			}
 
@@ -457,15 +462,16 @@ public class Aplicacion {
 
 
 						BuscarSlot r = new BuscarSlot(fuentes.get(fuentes.size()-1).grafo, listaCaminos);
-						resultadoSlot res = r.concatenarCaminos(fs,0);
+						resultadoSlot res = r.concatenarCaminos(fs,0, 0);
 
 
 						if (res !=null) {
 							//guardar caminos utilizados
+							fuentes.get(fuentes.size()-1).caminoUtilizado.add(res.caminoUtilizado);
 							fuentes.get(fuentes.size()-1).caminos.add(res.camino);
 							fuentes.get(fuentes.size()-1).ids.add(id);
 
-							System.out.println(res.toString());
+							//System.out.println(res.toString());
 							Asignacion asignar = new Asignacion(fuentes.get(fuentes.size()-1).grafo, res);
 							asignar.marcarSlotUtilizados(id);
 						}

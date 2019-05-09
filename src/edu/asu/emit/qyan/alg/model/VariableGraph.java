@@ -259,7 +259,7 @@ public class VariableGraph extends Graph
 	 */
 	public static void main(String[] args)
 	{
-		System.out.println("Welcome to the class VariableGraph!");
+		//System.out.println("Welcome to the class VariableGraph!");
 		
 		VariableGraph graph = new VariableGraph("data/test_50");
 		graph.remove_vertex(13);
@@ -271,6 +271,6 @@ public class VariableGraph extends Graph
 		graph.remove_vertex(3);
 		graph.remove_edge(new Pair<Integer, Integer>(26, 41));
 		DijkstraShortestPathAlg alg = new DijkstraShortestPathAlg(graph);
-		System.out.println(alg.get_shortest_path(graph.get_vertex(0), graph.get_vertex(20)));
+		//System.out.println(alg.get_shortest_path(graph.get_vertex(0), graph.get_vertex(20)));
 	}
 }

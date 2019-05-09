@@ -55,10 +55,10 @@ public class TestDijkstraAlg extends TestCase
 
 	public void testShorstPathAlg()
 	{
-		System.out.println("Testing Dijkstra Algorithm.");
+		//System.out.println("Testing Dijkstra Algorithm.");
 		//System.out.println(graph.get_vertex_list());
 		DijkstraShortestPathAlg alg = new DijkstraShortestPathAlg(graph);
-		System.out.println(alg.get_shortest_path(graph.get_vertex(0), graph.get_vertex(38)));
+		//System.out.println(alg.get_shortest_path(graph.get_vertex(0), graph.get_vertex(38)));
 	}
 	
 }
