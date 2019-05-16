@@ -250,6 +250,7 @@ public class Aplicacion {
 	public static void borrarConexion(int nroCamino, int nroGrafo, int nroCaminoAUsar) {
 
 		String camino = String.valueOf(fuentes.get(nroGrafo).caminos.get(nroCamino));
+		Boolean reasignarSioSi = false;
 
 		String caminoFinal = camino;
 		System.out.println("el camino es: " + caminoFinal);
@@ -294,10 +295,11 @@ public class Aplicacion {
             inicioSolicitud = (int)lista[1].charAt(0) - 48;
             finSolicitud = (int)lista[1].charAt(1) - 48;
             longitud = (int)lista[1].charAt(2) - 48;
+			reasignarSioSi = true;
         }
 
 
-		Boolean reasignar = asginar(inicioSolicitud, finSolicitud, nroGrafo, longitud, fuentes.get(nroGrafo).ids.get(nroCamino), nroCaminoAUsar);
+		Boolean reasignar = asginar(inicioSolicitud, finSolicitud, nroGrafo, longitud, fuentes.get(nroGrafo).ids.get(nroCamino), nroCaminoAUsar, reasignarSioSi);
 
 		if (reasignar) {
 			fuentes.get(nroGrafo).modificado++;
@@ -340,7 +342,7 @@ public class Aplicacion {
 	 * @return
 	 */
 
-	public static Boolean asginar(int inicio, int fin, int nroGrafo, int cantFs, int id, int caminoAUsar) {
+	public static Boolean asginar(int inicio, int fin, int nroGrafo, int cantFs, int id, int caminoAUsar, Boolean reasignar) {
 
 		String listaCaminos = "";
 
@@ -368,14 +370,25 @@ public class Aplicacion {
 			asignar.marcarSlotUtilizados(id);
 		}
 		else {
+			/**
+			 * Si es que se bloqueo y no encontro un camino se guardara los datos de la conexion y la palabra bloqueado
+			 */
+			fuentes.get(nroGrafo).caminoUtilizado.add(99);
+			fuentes.get(nroGrafo).caminos.add("Bloqueado:" + inicio + fin + cantFs);
+			fuentes.get(nroGrafo).ids.add(id);
 			System.out.println("No se encontró camino posible.");
 		}
 
 		int fsNuevo = calcularFsUno(nroGrafo);
 
+		if (reasignar) {
+			return false;
+		}
+
 		if (fsNuevo > fuentes.get(nroGrafo).fsUtilizados) {
 			return true;
 		}
+
 		return false;
 
 	}
@@ -494,6 +507,12 @@ public class Aplicacion {
 							asignar.marcarSlotUtilizados(id);
 						}
 						else {
+							/**
+							 * Si es que se bloqueo y no encontro un camino se guardara los datos de la conexion y la palabra bloqueado
+							 */
+							fuentes.get(fuentes.size()-1).caminoUtilizado.add(99);
+							fuentes.get(fuentes.size()-1).caminos.add("Bloqueado:" + str_list[0] + str_list[1] + str_list[2]);
+							fuentes.get(fuentes.size()-1).ids.add(id);
 							System.out.println("No se encontró camino posible.");
 						}
 					}
