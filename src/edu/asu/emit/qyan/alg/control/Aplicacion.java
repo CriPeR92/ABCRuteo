@@ -311,6 +311,7 @@ public class Aplicacion {
 			fuentes.get(nroGrafo).caminos.remove(fuentes.get(nroGrafo).caminos.size()-1);
 			fuentes.get(nroGrafo).ids.remove(fuentes.get(nroGrafo).ids.size()-1);
 			fuentes.get(nroGrafo).caminoUtilizado.remove(fuentes.get(nroGrafo).ids.size()-1);
+			fuentes.get(nroGrafo).modificado.remove(fuentes.get(nroGrafo).ids.size()-1);
 			// volver a como estaba
 			for (int p = 0; p < caminoFinal.length()-1; p++) {
 
@@ -461,7 +462,7 @@ public class Aplicacion {
 
 		for (int i=0; i < cantFuentes; i++) {
 			for (int p = 0; p < fuentes.get(i).modificado.size(); p++) {
-				if (fuentes.get(i).modificado.get(p) >= 1) {
+				if (fuentes.get(i).modificado.get(p) >= 2) {
 
 					String origen = String.valueOf(fuentes.get(i).caminos.get(p).charAt(0));
 					String destino = String.valueOf(fuentes.get(i).caminos.get(p).charAt(fuentes.get(i).caminos.get(p).length()-1));
@@ -495,6 +496,58 @@ public class Aplicacion {
 	}
 
 	public static void elegirConexion() {
+
+		int cantBloqueados = 0;
+		int cantBloqueadosNuevo = 0;
+
+		int[] vertices = {0, 1, 2, 3, 4, 5};
+		GrafoMatriz g = new GrafoMatriz(vertices);
+		g.InicializarGrafo(g.grafo);
+		g.agregarRuta(0, 1, 1, 3, 5);
+		g.agregarRuta(1, 5, 1, 3, 5);
+		g.agregarRuta(1, 3, 1, 3, 5);
+		g.agregarRuta(1, 2, 1, 3, 5);
+		g.agregarRuta(2, 3, 1, 3, 5);
+		g.agregarRuta(2, 4, 1, 3, 5);
+		g.agregarRuta(3, 5, 1, 3, 5);
+		g.agregarRuta(4, 5, 1, 3, 5);
+		FuentesComida resultadoFinal = new FuentesComida(g);
+
+		for (int i = 0; i < fuentes.size(); i++) {
+			cantBloqueados = 0;
+			cantBloqueadosNuevo = 0;
+
+			if (i == 0) {
+				resultadoFinal = fuentes.get(i);
+				int sumatoria;
+
+			} else {
+				for (int j = 0; j < resultadoFinal.caminoUtilizado.size(); j++) {
+					if (resultadoFinal.caminoUtilizado.get(j) == 99) {
+						cantBloqueados++;
+					}
+				}
+				for (int k = 0; k < fuentes.get(i).caminoUtilizado.size(); k++) {
+					if (fuentes.get(i).caminoUtilizado.get(k) == 99) {
+						cantBloqueadosNuevo++;
+					}
+				}
+				if (cantBloqueadosNuevo < cantBloqueados) {
+					resultadoFinal = fuentes.get(i);
+				} else if (cantBloqueados == cantBloqueadosNuevo && resultadoFinal.fsUtilizados > fuentes.get(i).fsUtilizados) {
+					resultadoFinal = fuentes.get(i);
+				}
+			}
+
+		}
+
+		for (int l = 0; l < resultadoFinal.caminoUtilizado.size(); l++) {
+			if (resultadoFinal.caminoUtilizado.get(l) == 99) {
+				cantBloqueados++;
+			}
+		}
+
+		System.out.println("El mejor resultado tiene el indice mayor utilizado en: " + resultadoFinal.fsUtilizados + " y una cantidad de conexiones bloqueadas igual a: " + cantBloqueados);
 
 	}
 
