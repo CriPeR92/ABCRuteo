@@ -13,6 +13,7 @@ public class Aplicacion {
 	public static VariableGraph graph = new VariableGraph("data/test_25");
 	public static ArrayList<Float> pi = new ArrayList<>();
 	public static ArrayList<String[]> caminos = new ArrayList<>();
+	public static int abejas = 10;
 
 
 	public static void main(String[] args) throws InterruptedException, IOException {
@@ -20,12 +21,12 @@ public class Aplicacion {
 //		crearArchivoCaminos();
 		leerArchivoCaminos();
 
-		crearFuenteDeComida(5);
+		crearFuenteDeComida(abejas);
 
 		for (int i=0; i< 10; i++) {
-			primerPaso(5);
-			segundoPaso(5);
-			tercerPaso(5);
+			primerPaso(abejas);
+			segundoPaso(abejas);
+			tercerPaso(abejas);
 		}
 		elegirConexion();
 
@@ -555,6 +556,8 @@ public class Aplicacion {
 
 	public static void elegirConexion() {
 
+		calcularFS(abejas);
+
 		int cantBloqueados = 0;
 		int cantBloqueadosNuevo = 0;
 
@@ -641,6 +644,7 @@ public class Aplicacion {
 				cantBloqueados++;
 			}
 		}
+
 
 		System.out.println("El mejor resultado tiene el indice mayor utilizado en: " + resultadoFinal.fsUtilizados + " y una cantidad de conexiones bloqueadas igual a: " + cantBloqueados);
 
