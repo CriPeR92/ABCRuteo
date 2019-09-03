@@ -4,11 +4,13 @@ public class FrecuenciaSlot {
 
 	public int libreOcupado;
 	public int id;
+	public int tiempo;
 	
-	public FrecuenciaSlot(int libreOcupado, int id) {
+	public FrecuenciaSlot(int libreOcupado, int id, int tiempo) {
 		super();
 		this.libreOcupado = libreOcupado;
 		this.id = id;
+		this.tiempo = tiempo;
 	}
 
 	public int getLibreOcupado() {

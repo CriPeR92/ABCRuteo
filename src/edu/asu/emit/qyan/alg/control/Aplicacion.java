@@ -2,6 +2,7 @@ package edu.asu.emit.qyan.alg.control;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 import edu.asu.emit.qyan.alg.model.Path;
@@ -18,18 +19,36 @@ public class Aplicacion {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
-//		crearArchivoCaminos();
-		leerArchivoCaminos();
+		crearArchivoCaminos();
+//		for (int p = 0; p < 30; p++) {
+//		long startTime = System.nanoTime();
 
-		crearFuenteDeComida(abejas);
+			leerArchivoCaminos();
 
-		for (int i = 0; i < 300; i++) {
-			primerPaso(abejas);
-			segundoPaso(abejas);
-			tercerPaso(abejas);
-		}
-		elegirConexion();
+			crearFuenteDeComida(abejas);
 
+			for (int l = 1; l <= 6; l++) {
+
+				cargarSolicitudes(abejas, l);
+
+				for (int i = 0; i < 3; i++) {
+					primerPaso(abejas);
+					segundoPaso(abejas);
+					tercerPaso(abejas);
+				}
+
+				for (int p = 0; p < abejas; p++) {
+					fuentes.get(p).grafo.restar();
+				}
+			}
+			elegirConexion();
+//		long endTime   = System.nanoTime();
+//		long totalTime = (endTime - startTime)/1000000000;
+//		System.out.println(totalTime);
+//			fuentes.clear();
+//			pi.clear();
+//			caminos.clear();
+//		}
 	}
 
 	/**
@@ -50,6 +69,87 @@ public class Aplicacion {
 			caminos.add(variables);
 			linea = bufRead.readLine();
 		}
+	}
+
+	private static void cargarSolicitudes(int cantFuente, int solicitud) throws IOException {
+
+		String numero = "";
+		numero = Integer.toString(solicitud);
+
+		System.out.println("se carga: " + "solicitudes" + numero);
+		FileReader input = new FileReader("data/solicitudes" + numero);
+		BufferedReader bufRead = new BufferedReader(input);
+
+		String linea = bufRead.readLine();
+
+		while (linea != null ) {
+
+			if (linea.trim().equals("")) {
+				linea = bufRead.readLine();
+				continue;
+			}
+			String[] str_list = linea.trim().split("\\s*,\\s*");
+
+			/**
+			 * Calculo para la cantidad de fs
+			 */
+			int calAux = Integer.parseInt(str_list[2]);
+			double doubleAux = Integer.parseInt(str_list[2]);
+			doubleAux = Math.ceil(calAux/10);
+			calAux = (int) Math.ceil(doubleAux / 12);
+			/**
+			 *
+			 */
+
+			int origen = Integer.parseInt(str_list[0]);
+			int destino = Integer.parseInt(str_list[1]);
+			int fs = calAux;
+			int tiempo = Integer.parseInt(str_list[3]);
+			int id = Integer.parseInt(str_list[4]);
+
+			int inicio = origen;
+			int fin = destino;
+			String listaCaminos = "";
+
+			for (int k = 0; k < caminos.size(); k++) {
+				if (caminos.get(k)[0].equals(str_list[0]) && caminos.get(k)[1].equals(str_list[1])) {
+					listaCaminos = caminos.get(k)[2];
+					break;
+				}
+			}
+
+			for (int j = 0; j < cantFuente; j++) {
+
+				if (fuentes.get(j).ids.contains(id)) {
+
+					fuentes.get(j).grafo.verificar_conexion(origen,id,fs);
+
+				} else {
+					BuscarSlot r = new BuscarSlot(fuentes.get(j).grafo, listaCaminos);
+					resultadoSlot res = r.concatenarCaminos(fs, 0, 0);
+					if (res != null) {
+						//guardar caminos utilizados y el numero de camino utilizado
+						fuentes.get(j).caminoUtilizado.add(res.caminoUtilizado);
+						fuentes.get(j).caminos.add(res.camino);
+						fuentes.get(j).ids.add(id);
+						fuentes.get(j).modificado.add(0);
+						Asignacion asignar = new Asignacion(fuentes.get(j).grafo, res);
+						asignar.marcarSlotUtilizados(id);
+					} else {
+						/**
+						 * Si es que se bloqueo y no encontro un camino se guardara los datos de la conexion y la palabra bloqueado
+						 */
+						fuentes.get(j).caminoUtilizado.add(99);
+						fuentes.get(j).caminos.add("Bloqueado:" + str_list[0] + ":" + str_list[1] + ":" + calAux);
+						fuentes.get(j).ids.add(id);
+						fuentes.get(j).modificado.add(0);
+						//System.out.println("No se encontró camino posible y se guarda la informacion de la conexion.");
+					}
+				}
+			}
+			linea = bufRead.readLine();
+		}
+		bufRead.close();
 	}
 
 	/**
@@ -88,7 +188,7 @@ public class Aplicacion {
 			g.InicializarGrafo(g.grafo);
 
 			g.agregarRuta(0, 1, 1, 3, 200);
-			g.agregarRuta(2, 6, 1, 3, 200);
+			g.agregarRuta(2,6, 1, 3, 200);
 			g.agregarRuta(2, 8, 1, 3, 200);
 			g.agregarRuta(2, 9, 1, 3, 200);
 			g.agregarRuta(4, 3, 1, 3, 200);
@@ -106,7 +206,7 @@ public class Aplicacion {
 			g.agregarRuta(14, 10, 1, 3, 200);
 			g.agregarRuta(14, 12, 1, 3, 200);
 			g.agregarRuta(14, 13, 1, 3, 200);
-			g.agregarRuta(14, 15, 1, 3, 200);
+			g.agregarRuta(14, 15,1, 3, 200);
 			g.agregarRuta(14, 17, 1, 3, 200);
 			g.agregarRuta(14, 19, 1, 3, 200);
 			g.agregarRuta(14, 20, 1, 3, 200);
@@ -135,77 +235,6 @@ public class Aplicacion {
 
 			fuentes.add(new FuentesComida(g));
 		}
-
-		FileReader input = new FileReader("data/solicitudes");
-		BufferedReader bufRead = new BufferedReader(input);
-
-		String linea = bufRead.readLine();
-
-		while (linea != null ) {
-
-			if (linea.trim().equals("")) {
-				linea = bufRead.readLine();
-				continue;
-			}
-			String[] str_list = linea.trim().split("\\s*,\\s*");
-
-			/**
-			 * Calculo para la cantidad de fs
-			 */
-			int calAux = Integer.parseInt(str_list[2]);
-			double doubleAux = Integer.parseInt(str_list[2]);
-			doubleAux = Math.ceil(calAux/10);
-			calAux = (int) Math.ceil(doubleAux / 12);
-			/**
-			 *
-			 */
-
-			int origen = Integer.parseInt(str_list[0]);
-			int destino = Integer.parseInt(str_list[1]);
-			int fs = calAux;
-			int tiempo = Integer.parseInt(str_list[3]);
-			int id = Integer.parseInt(str_list[4]);
-
-			int inicio = origen;
-			int fin = destino;
-			String listaCaminos = "";
-
-
-			for (int k = 0; k < caminos.size(); k++) {
-				if (caminos.get(k)[0].equals(str_list[0]) && caminos.get(k)[1].equals(str_list[1])) {
-					listaCaminos = caminos.get(k)[2];
-					break;
-				}
-			}
-
-			for (int j = 0; j < cantFuente; j++) {
-				BuscarSlot r = new BuscarSlot(fuentes.get(j).grafo, listaCaminos);
-				resultadoSlot res = r.concatenarCaminos(fs,0, 0);
-
-
-				if (res !=null) {
-					//guardar caminos utilizados y el numero de camino utilizado
-					fuentes.get(j).caminoUtilizado.add(res.caminoUtilizado);
-					fuentes.get(j).caminos.add(res.camino);
-					fuentes.get(j).ids.add(id);
-					fuentes.get(j).modificado.add(0);
-					Asignacion asignar = new Asignacion(fuentes.get(j).grafo, res);
-					asignar.marcarSlotUtilizados(id);
-				} else {
-                    /**
-                     * Si es que se bloqueo y no encontro un camino se guardara los datos de la conexion y la palabra bloqueado
-                     */
-                    fuentes.get(j).caminoUtilizado.add(99);
-                    fuentes.get(j).caminos.add("Bloqueado:" + str_list[0] + ":" + str_list[1] + ":" + calAux);
-                    fuentes.get(j).ids.add(id);
-					fuentes.get(j).modificado.add(0);
-					//System.out.println("No se encontró camino posible y se guarda la informacion de la conexion.");
-				}
-			}
-			linea = bufRead.readLine();
-		}
-		bufRead.close();
-
 	}
 
 	/**
@@ -563,8 +592,9 @@ public class Aplicacion {
 		int[] vertices = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24};
 		GrafoMatriz g = new GrafoMatriz(vertices);
 		g.InicializarGrafo(g.grafo);
+
 		g.agregarRuta(0, 1, 1, 3, 200);
-		g.agregarRuta(2, 6, 1, 3, 200);
+		g.agregarRuta(2,6, 1, 3, 200);
 		g.agregarRuta(2, 8, 1, 3, 200);
 		g.agregarRuta(2, 9, 1, 3, 200);
 		g.agregarRuta(4, 3, 1, 3, 200);
@@ -582,7 +612,7 @@ public class Aplicacion {
 		g.agregarRuta(14, 10, 1, 3, 200);
 		g.agregarRuta(14, 12, 1, 3, 200);
 		g.agregarRuta(14, 13, 1, 3, 200);
-		g.agregarRuta(14, 15, 1, 3, 200);
+		g.agregarRuta(14, 15,1, 3, 200);
 		g.agregarRuta(14, 17, 1, 3, 200);
 		g.agregarRuta(14, 19, 1, 3, 200);
 		g.agregarRuta(14, 20, 1, 3, 200);
@@ -648,8 +678,7 @@ public class Aplicacion {
 
 		float indice = (float)resultadoFinal.fsUtilizados/200;
 
-		System.out.println("Funcion objetivo: " + indice + " Conexiones bloqueadas: " + cantBloqueados);
-
+		System.out.println(indice +" "+ cantBloqueados);
 	}
 
 }

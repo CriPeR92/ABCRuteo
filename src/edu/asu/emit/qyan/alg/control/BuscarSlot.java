@@ -39,13 +39,12 @@ public class BuscarSlot {
 		procesadoCaminos();
 		int res = 0;
 		
-		etiquetadesalida: {
-		
 		for (int a = 0; a < listaCaminos.length; a++) {
 
 			for (int i = 0; i < respuesta.vectorAsignacion.length; i++) {
 				respuesta.vectorAsignacion[i] = 0;
 			}
+
 			int random = (int)(Math.random() * listaCaminos.length);
 
 			String cam;
@@ -119,24 +118,30 @@ public class BuscarSlot {
 						indiceActual = i;
 						ban = true;
 					}
-					
-					if (contadorActual >= fs ) {
+
+					if (contadorActual >= fs && contadorActual > contadorFinal) {
+
 						indiceFinal = indiceActual;
 						contadorFinal = contadorActual;
-						respuesta.indice = indiceFinal;
-					    respuesta.contador = contadorFinal;
-					    respuesta.cantidadfs = fs;
-					    res = contadorFinal;
-						break etiquetadesalida;
 					}
 
 					if (!ban) {
 						contadorActual=0;
 					}
 				}
-				
+
+			if (contadorFinal >= fs) {
+				//  indiceFinal = (indiceFinal - (int)(contadorFinal/2));
+				respuesta.indice = indiceFinal;
+				respuesta.contador = contadorFinal;
+				respuesta.cantidadfs = fs;
+				res = contadorFinal;
+				//  res = true;
+				break;
+			}
+
 		}
-		}
+
 		
 		if (res >= fs) {
 			return respuesta;
