@@ -14,7 +14,7 @@ public class Aplicacion {
 	public static VariableGraph graph = new VariableGraph("data/test_25");
 	public static ArrayList<Float> pi = new ArrayList<>();
 	public static ArrayList<String[]> caminos = new ArrayList<>();
-	public static int abejas = 10;
+	public static int abejas = 5;
 
 
 	public static void main(String[] args) throws InterruptedException, IOException {
@@ -31,15 +31,19 @@ public class Aplicacion {
 
 				cargarSolicitudes(abejas, l);
 
-				for (int i = 0; i < 3; i++) {
+				for (int i = 0; i < 300; i++) {
+
 					primerPaso(abejas);
 					segundoPaso(abejas);
 					tercerPaso(abejas);
 				}
 
 				for (int p = 0; p < abejas; p++) {
+
 					fuentes.get(p).grafo.restar();
+
 				}
+				System.out.println("despues de pasos");
 			}
 			elegirConexion();
 //		long endTime   = System.nanoTime();
@@ -76,7 +80,7 @@ public class Aplicacion {
 		String numero = "";
 		numero = Integer.toString(solicitud);
 
-		System.out.println("se carga: " + "solicitudes" + numero);
+//		System.out.println("se carga: " + "solicitudes" + numero);
 		FileReader input = new FileReader("data/solicitudes" + numero);
 		BufferedReader bufRead = new BufferedReader(input);
 
@@ -122,7 +126,46 @@ public class Aplicacion {
 
 				if (fuentes.get(j).ids.contains(id)) {
 
-					fuentes.get(j).grafo.verificar_conexion(origen,id,fs);
+//					System.out.println("se carga la solicitud " + linea);
+					Boolean reasignar = fuentes.get(j).grafo.verificar_conexion(origen,id,fs);
+
+					if (!reasignar) {
+						System.out.println("SE VA A VOLVER A ASIGNAR");
+						BuscarSlot r = new BuscarSlot(fuentes.get(j).grafo, listaCaminos);
+						resultadoSlot res = r.concatenarCaminos(fs, 0, 0);
+						if (res != null) {
+							//guardar caminos utilizados y el numero de camino utilizado
+//							fuentes.get(j).caminoUtilizado.add(res.caminoUtilizado);
+//							fuentes.get(j).caminos.add(res.camino);
+//							fuentes.get(j).ids.add(id);
+//							fuentes.get(j).modificado.add(0);
+							int i, k, f;
+							for (i = 0; i < fuentes.get(j).grafo.grafo.length; i++) {
+								for (f = 0; f < fuentes.get(j).grafo.grafo.length; f++) {
+									for (k = 0; k < fuentes.get(j).grafo.grafo[i][j].listafs.length; k++) {
+										if (fuentes.get(j).grafo.grafo[i][f].listafs[k].id == id) {
+											fuentes.get(j).grafo.grafo[i][f].listafs[k].id = 0;
+											fuentes.get(j).grafo.grafo[i][f].listafs[k].tiempo = 0;
+											fuentes.get(j).grafo.grafo[i][f].listafs[k].libreOcupado = 0;
+										}
+									}
+								}
+							}
+							System.out.println("Se elimino y se va a guardar de nuevo");
+							Asignacion asignar = new Asignacion(fuentes.get(j).grafo, res);
+							asignar.marcarSlotUtilizados(id);
+						} else {
+							System.out.println("NO SE ENCONTRO LUGAR");
+							/**
+							 * Si es que se bloqueo y no encontro un camino se guardara los datos de la conexion y la palabra bloqueado
+							 */
+//							fuentes.get(j).caminoUtilizado.add(99);
+//							fuentes.get(j).caminos.add("Bloqueado:" + str_list[0] + ":" + str_list[1] + ":" + calAux);
+//							fuentes.get(j).ids.add(id);
+//							fuentes.get(j).modificado.add(0);
+							//System.out.println("No se encontró camino posible y se guarda la informacion de la conexion.");
+						}
+					}
 
 				} else {
 					BuscarSlot r = new BuscarSlot(fuentes.get(j).grafo, listaCaminos);
@@ -545,14 +588,17 @@ public class Aplicacion {
 	 * En el tercer paso vamos a verificar si existen fuentes de comida abandonadas y vamos a guardar la mejor fuente de comida o solucion hasta el momento
 	 */
 
-	public static void tercerPaso(int cantFuentes) throws IOException {
+	public static void tercerPaso(int cantFuentes) {
 
 		for (int i=0; i < cantFuentes; i++) {
 			for (int p = 0; p < fuentes.get(i).modificado.size(); p++) {
 				if (fuentes.get(i).modificado.get(p) >= 2) {
 
-					String origen = String.valueOf(fuentes.get(i).caminos.get(p).charAt(0));
-					String destino = String.valueOf(fuentes.get(i).caminos.get(p).charAt(fuentes.get(i).caminos.get(p).length()-1));
+					String[] camino;
+					camino = fuentes.get(i).caminos.get(p).split(",");
+
+					String origen = camino[camino.length-1];
+					String destino = camino[0];
 
 
 					String listaCaminos = "";

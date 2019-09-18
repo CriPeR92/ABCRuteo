@@ -7,21 +7,15 @@
       <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Asignacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Asignacion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/BuscarSlot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/BuscarSlot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/DijkstraShortestPathAlg.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/DijkstraShortestPathAlg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Enlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Enlace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FrecuenciaSlot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FrecuenciaSlot.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/GrafoMatriz.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/GrafoMatriz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/YenTopKShortestPathsAlg.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/YenTopKShortestPathsAlg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Pair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/VariableGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/VariableGraph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Kcaminos" beforeDir="false" afterPath="$PROJECT_DIR$/data/Kcaminos" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/solicitudes" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/solicitudes2" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/solicitudes3" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/solicitudes4" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/solicitudes5" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/solicitudes6" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Enlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Enlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FrecuenciaSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FrecuenciaSlot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,6 +32,157 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1289872619">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+          <entry key="solicitudes1" value="1" />
+          <entry key="solicitudes2" value="1" />
+          <entry key="solicitudes3" value="2" />
+          <entry key="solicitudes4" value="1" />
+          <entry key="solicitudes5" value="1" />
+          <entry key="solicitudes6" value="1" />
+          <entry key="test_25" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="PLAIN_TEXT" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="724" />
+          <entry key="solicitudes2" value="9" />
+          <entry key="solicitudes3" value="28" />
+          <entry key="solicitudes4" value="30" />
+          <entry key="solicitudes5" value="30" />
+          <entry key="solicitudes6" value="1" />
+          <entry key="test_25" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="724" />
+          <entry key="PLAIN_TEXT" value="100" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1890">
+              <caret line="132" column="70" selection-start-line="132" selection-start-column="70" selection-end-line="132" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="51" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="80" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/solicitudes1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/solicitudes2">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/solicitudes3">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/solicitudes4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="9" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/solicitudes5">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/solicitudes6">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="773">
+              <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -45,18 +190,114 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.grafo.id</find>
+      <find>.grafo.grafo.</find>
+      <find>grafo.grafo[</find>
+      <find>verificar_conexion</find>
+      <find>while</find>
+      <find>se tr</find>
+      <find>.caminos.</find>
+      <find>restart</find>
+      <find>this.caminos</find>
+      <find>this.camino</find>
+      <find>.camino</find>
+      <find>se carg</find>
+      <find>SE VU</find>
+      <find>1,4</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/test_25" />
+        <option value="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java" />
+        <option value="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java" />
+        <option value="$PROJECT_DIR$/data/solicitudes2" />
+        <option value="$PROJECT_DIR$/data/solicitudes3" />
+        <option value="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" />
+        <option value="$PROJECT_DIR$/data/solicitudes4" />
+        <option value="$PROJECT_DIR$/data/solicitudes5" />
+        <option value="$PROJECT_DIR$/data/solicitudes6" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="980" />
+  </component>
   <component name="ProjectId" id="1PvGFzlxGDc2YDIpCjxL5moQUZb" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AlgoritmoABCFirstFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgoritmoABCFirstFit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgoritmoABCFirstFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgoritmoABCFirstFit" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgoritmoABCFirstFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgoritmoABCFirstFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgoritmoABCFirstFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgoritmoABCFirstFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="alg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgoritmoABCFirstFit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgoritmoABCFirstFit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="alg" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562794762966" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568066254074" />
     <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ABCPermutacion" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -112,12 +353,52 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="980" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2454739" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.356982" />
+      <window_info anchor="bottom" x="4" y="20" width="1920" height="1040" id="Debug" order="3" weight="0.41216215" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32882884" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29954955" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295964" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3277027" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
+    </layout>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -125,24 +406,74 @@
       </map>
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java</url>
-          <line>678</line>
-          <option name="timeStamp" value="128" />
+          <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java</url>
+          <line>319</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java</url>
-          <line>585</line>
-          <option name="timeStamp" value="130" />
+          <line>129</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java</url>
+          <line>254</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java</url>
+          <line>234</line>
+          <properties />
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="fuentes.get(i).caminos.get(p)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>i</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fuentes.get(i).caminos.get(p)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>fuentes.get(i).modificado.get(p)</expression-string>
         <language-id>JAVA</language-id>
@@ -167,6 +498,113 @@
       </expression>
     </expressions>
   </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/Kcaminos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15480">
+          <caret line="1032" column="114" selection-start-line="1032" selection-start-column="114" selection-end-line="1032" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/solicitudes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/soluciones">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_25">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="132" column="70" selection-start-line="132" selection-start-column="70" selection-end-line="132" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="51" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="80" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/solicitudes1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/solicitudes2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/solicitudes3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/solicitudes4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/solicitudes5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/solicitudes6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
@@ -183,6 +621,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -205,6 +644,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -216,10 +656,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>AlgoritmoFirstfit</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
