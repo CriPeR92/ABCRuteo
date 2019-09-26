@@ -20,7 +20,7 @@ public class Aplicacion {
 	public static void main(String[] args) throws InterruptedException, IOException {
 
 		crearArchivoCaminos();
-//		for (int p = 0; p < 30; p++) {
+		for (int m = 0; m < 30; m++) {
 //		long startTime = System.nanoTime();
 
 			leerArchivoCaminos();
@@ -31,7 +31,7 @@ public class Aplicacion {
 
 				cargarSolicitudes(abejas, l);
 
-				for (int i = 0; i < 300; i++) {
+				for (int i = 0; i < 5; i++) {
 
 					primerPaso(abejas);
 					segundoPaso(abejas);
@@ -43,16 +43,15 @@ public class Aplicacion {
 					fuentes.get(p).grafo.restar();
 
 				}
-				System.out.println("despues de pasos");
 			}
 			elegirConexion();
 //		long endTime   = System.nanoTime();
 //		long totalTime = (endTime - startTime)/1000000000;
 //		System.out.println(totalTime);
-//			fuentes.clear();
-//			pi.clear();
-//			caminos.clear();
-//		}
+			fuentes.clear();
+			pi.clear();
+			caminos.clear();
+		}
 	}
 
 	/**
@@ -130,7 +129,7 @@ public class Aplicacion {
 					Boolean reasignar = fuentes.get(j).grafo.verificar_conexion(origen,id,fs);
 
 					if (!reasignar) {
-						System.out.println("SE VA A VOLVER A ASIGNAR");
+//						System.out.println("SE VA A VOLVER A ASIGNAR");
 						BuscarSlot r = new BuscarSlot(fuentes.get(j).grafo, listaCaminos);
 						resultadoSlot res = r.concatenarCaminos(fs, 0, 0);
 						if (res != null) {
@@ -151,11 +150,11 @@ public class Aplicacion {
 									}
 								}
 							}
-							System.out.println("Se elimino y se va a guardar de nuevo");
+//							System.out.println("Se elimino y se va a guardar de nuevo");
 							Asignacion asignar = new Asignacion(fuentes.get(j).grafo, res);
 							asignar.marcarSlotUtilizados(id);
 						} else {
-							System.out.println("NO SE ENCONTRO LUGAR");
+//							System.out.println("NO SE ENCONTRO LUGAR");
 							/**
 							 * Si es que se bloqueo y no encontro un camino se guardara los datos de la conexion y la palabra bloqueado
 							 */
@@ -686,6 +685,8 @@ public class Aplicacion {
 		g.agregarRuta(24, 8, 1, 3, 200);
 		FuentesComida resultadoFinal = new FuentesComida(g);
 
+		int nroGrafo = 0;
+
 		for (int i = 0; i < fuentes.size(); i++) {
 			cantBloqueados = 0;
 			cantBloqueadosNuevo = 0;
@@ -707,8 +708,10 @@ public class Aplicacion {
 				}
 				if (cantBloqueadosNuevo < cantBloqueados) {
 					resultadoFinal = fuentes.get(i);
+					nroGrafo = i;
 				} else if (cantBloqueados == cantBloqueadosNuevo && resultadoFinal.fsUtilizados > fuentes.get(i).fsUtilizados) {
 					resultadoFinal = fuentes.get(i);
+					nroGrafo = i;
 				}
 			}
 
@@ -722,9 +725,27 @@ public class Aplicacion {
 			}
 		}
 
-		float indice = (float)resultadoFinal.fsUtilizados/200;
+		int m,n,b = 0;
+		float contadorEntropia = 0;
+		int empezoEn = 0;
 
-		System.out.println(indice +" "+ cantBloqueados);
+		for (m = 0; m < fuentes.get(nroGrafo).grafo.grafo.length; m++) {
+			for (n = 0; n < fuentes.get(nroGrafo).grafo.grafo.length; n++) {
+				if (fuentes.get(nroGrafo).grafo.grafo[m][n].distancia != 0) {
+					empezoEn = fuentes.get(nroGrafo).grafo.grafo[m][n].listafs[0].libreOcupado;
+					for (b = 0; b < fuentes.get(nroGrafo).grafo.grafo[m][n].listafs.length; b++) {
+						if (empezoEn != fuentes.get(nroGrafo).grafo.grafo[m][n].listafs[b].libreOcupado) {
+							empezoEn = fuentes.get(nroGrafo).grafo.grafo[m][n].listafs[b].libreOcupado;
+							contadorEntropia++;
+						}
+					}
+				}
+			}
+		}
+
+		float indice = (float)fuentes.get(nroGrafo).fsUtilizados/200;
+
+		System.out.println(indice +" "+ cantBloqueados +" "+ (contadorEntropia/45));
 	}
 
 }
