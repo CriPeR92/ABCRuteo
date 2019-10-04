@@ -27,11 +27,11 @@ public class Aplicacion {
 
 			crearFuenteDeComida(abejas);
 
-			for (int l = 1; l <= 6; l++) {
+			for (int l = 1; l <= 1; l++) {
 
 				cargarSolicitudes(abejas, l);
 
-				for (int i = 0; i < 5; i++) {
+				for (int i = 0; i < 300; i++) {
 
 					primerPaso(abejas);
 					segundoPaso(abejas);
@@ -745,7 +745,7 @@ public class Aplicacion {
 
 		float indice = (float)fuentes.get(nroGrafo).fsUtilizados/200;
 
-		System.out.println(indice +" "+ cantBloqueados +" "+ (contadorEntropia/45));
+		System.out.println(indice +" "+ cantBloqueados +" "+ ((contadorEntropia/45)/2));
 	}
 
 }

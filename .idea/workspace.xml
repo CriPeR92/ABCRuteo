@@ -4,10 +4,7 @@
     <list default="true" id="c3879f2f-7a88-4d06-a12e-f5e6386bd08b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/GrafoMatriz.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/GrafoMatriz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Kcaminos" beforeDir="false" afterPath="$PROJECT_DIR$/data/Kcaminos" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +42,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1118" />
+          <entry key="java" value="1140" />
           <entry key="solicitudes2" value="9" />
           <entry key="solicitudes3" value="28" />
           <entry key="solicitudes4" value="30" />
@@ -56,35 +53,36 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1118" />
+          <entry key="JAVA" value="1140" />
           <entry key="PLAIN_TEXT" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.29" value="3" />
+          <entry key="project.open.time.27" value="2" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.29" value="6" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="745" column="51" selection-start-line="745" selection-start-column="51" selection-end-line="745" selection-end-column="51" />
+            <state relative-caret-position="364">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,29 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/test_25">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="7" selection-end-line="91" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="342" column="5" selection-start-line="342" selection-start-column="5" selection-end-line="342" selection-end-column="5" />
+            <state relative-caret-position="30">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -220,8 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="980" />
@@ -246,7 +225,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,7 +260,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,10 +328,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="23" width="1920" height="980" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="980" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26411074" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2800852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -362,11 +341,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.35585585" />
-      <window_info active="true" anchor="bottom" x="4" y="20" width="1920" height="1040" id="Debug" order="3" visible="true" weight="0.41103604" />
+      <window_info anchor="bottom" x="4" y="20" width="1920" height="1040" id="Debug" order="3" weight="0.41103604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882884" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27564767" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27477476" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295964" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3277027" />
@@ -487,10 +466,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test_25">
+    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="7" selection-end-line="91" selection-end-column="6" />
+        <state relative-caret-position="364">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -498,6 +480,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5130">
+          <caret line="342" column="5" selection-start-line="342" selection-start-column="5" selection-end-line="342" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -543,20 +532,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java">
+    <entry file="file://$PROJECT_DIR$/data/test_25">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="342" column="5" selection-start-line="342" selection-start-column="5" selection-end-line="342" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="745" column="51" selection-start-line="745" selection-start-column="51" selection-end-line="745" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
         </state>
       </provider>
     </entry>
