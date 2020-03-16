@@ -12,6 +12,7 @@ public class FuentesComida {
     public ArrayList<Integer> caminoUtilizado;
     public int fsUtilizados;
     public ArrayList<Integer> modificado;
+    public int semiBloqueados;
 
     public FuentesComida(GrafoMatriz g) {
         this.grafo = g;
@@ -20,6 +21,7 @@ public class FuentesComida {
         this.caminoUtilizado = new ArrayList<>();
         this.fsUtilizados = 0;
         this.modificado = new ArrayList<>();
+        this.semiBloqueados = 0;
     }
 
 }
