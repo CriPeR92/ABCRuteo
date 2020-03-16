@@ -2,19 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3879f2f-7a88-4d06-a12e-f5e6386bd08b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FuentesComida.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FuentesComida.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Asignacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/BuscarSlot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Caminos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/DijkstraShortestPathAlg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Enlace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FrecuenciaSlot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FuentesComida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/GrafoMatriz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/YenTopKShortestPathsAlg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/resultadoSlot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/QYPriorityQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/VariableGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/Vertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/abstracts/BaseEdge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/abstracts/BaseElementWithWeight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/abstracts/BaseGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/model/abstracts/BaseVertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/test/TestDijkstraAlg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/test/YenTopKShortestPathsAlgTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Kcaminos" beforeDir="false" afterPath="$PROJECT_DIR$/data/Kcaminos" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/solicitudes1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes2" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes3" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes4" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes5" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/solicitudes6" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/test_25" beforeDir="false" afterPath="$PROJECT_DIR$/data/test_25" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FuentesComida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FuentesComida.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +97,7 @@
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.28" value="2" />
@@ -90,7 +110,7 @@
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.73" value="1" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
     </session>
@@ -101,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
-              <caret line="809" column="53" selection-start-line="809" selection-start-column="53" selection-end-line="809" selection-end-column="53" />
+              <caret line="809" selection-start-line="809" selection-end-line="809" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1262">
+            <state relative-caret-position="1335">
               <caret line="94" selection-start-line="94" selection-end-line="94" />
             </state>
           </provider>
@@ -121,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/test_25">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="675">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -261,6 +281,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
@@ -295,6 +316,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -320,7 +351,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="980" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18690096" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18849841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -517,27 +548,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="809" selection-start-line="809" selection-end-line="809" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1262">
+        <state relative-caret-position="1335">
           <caret line="94" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/test_25">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="809" column="53" selection-start-line="809" selection-start-column="53" selection-end-line="809" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="675">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -19,16 +19,18 @@ public class Aplicacion {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
-//	    for (int h = 1; h <= 100; h++) {
-//            crearArchivosSolicitudes(h);
-//        }
-//		crearArchivoCaminos();
+
+	    for (int h = 1; h <= 100; h++) {
+            crearArchivosSolicitudes(h);
+        }
+		crearArchivoCaminos();
 
 //		long startTime = System.nanoTime();
 
 			leerArchivoCaminos();
 
 			crearFuenteDeComida(abejas);
+
 
 			for (int l = 1; l <= 100; l++) {
 
@@ -208,6 +210,7 @@ public class Aplicacion {
 		PrintWriter writer = new PrintWriter("data/Kcaminos", "UTF-8");
 
 		// en este for hay que poner la cantidad de vertices que tenemos
+
 		for (int i = 0; i <= 15; i++) {
 			for (int k = 0; k <= 15; k++) {
 				if (i != k) {
@@ -306,6 +309,7 @@ public class Aplicacion {
 //			g.agregarRuta(24, 2, 1, 3, 200);
 //			g.agregarRuta(24, 3, 1, 3, 200);
 //			g.agregarRuta(24, 8, 1, 3, 200);
+
 
 			fuentes.add(new FuentesComida(g));
 		}
@@ -743,6 +747,7 @@ public class Aplicacion {
 //		g.agregarRuta(24, 2, 1, 3, 200);
 //		g.agregarRuta(24, 3, 1, 3, 200);
 //		g.agregarRuta(24, 8, 1, 3, 200);
+
 		FuentesComida resultadoFinal = new FuentesComida(g);
 
 		int nroGrafo = 0;
