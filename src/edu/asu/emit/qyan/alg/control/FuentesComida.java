@@ -1,9 +1,18 @@
 package edu.asu.emit.qyan.alg.control;
 
-import edu.asu.emit.qyan.alg.model.Path;
-
 import java.util.ArrayList;
 
+
+/**
+ * Clase para representar a la solucion, las variables se explican en el mismo orden
+ * -Grafo
+ * -Caminos utilizados
+ * -id's de las solicitudes atendidas
+ * -Numero de camino utilizados para cada solicitud
+ * -Indice mayor de fs utilizado
+ * -Si una solucion se ha modificado o no en una iteracion del algoritmo
+ * -Contador de SemiBloqueos
+ */
 public class FuentesComida {
 
     public GrafoMatriz grafo;
