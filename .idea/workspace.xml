@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c3879f2f-7a88-4d06-a12e-f5e6386bd08b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/Aplicacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FuentesComida.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/edu/asu/emit/qyan/alg/control/FuentesComida.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Kcaminos" beforeDir="false" afterPath="$PROJECT_DIR$/data/Kcaminos" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes1" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes10" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes10" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes100" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes100" afterDir="false" />
@@ -107,26 +104,6 @@
       <change beforePath="$PROJECT_DIR$/data/solicitudes98" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes98" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/solicitudes99" beforeDir="false" afterPath="$PROJECT_DIR$/data/solicitudes99" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Asignacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/BuscarSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Caminos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/DijkstraShortestPathAlg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/DijkstraShortestPathAlg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Enlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Enlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FrecuenciaSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FrecuenciaSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FuentesComida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/FuentesComida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/GrafoMatriz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/YenTopKShortestPathsAlg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/YenTopKShortestPathsAlg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/resultadoSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/resultadoSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/QYPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/QYPriorityQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/VariableGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/VariableGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/Vertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseElementWithWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseElementWithWeight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/model/abstracts/BaseVertex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +161,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/edu/asu/emit/qyan/alg/control/Aplicacion.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -275,7 +255,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583518691523" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ABCPermutacion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

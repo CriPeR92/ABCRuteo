@@ -671,6 +671,7 @@ public class Aplicacion {
 
         int m, n, b = 0;
         float contadorEntropia = 0;
+        float contadorEntropiaFinal = 0;
         int empezoEn = 0;
 
         for (m = 0; m < fuentes.get(nroGrafo).grafo.grafo.length; m++) {
@@ -683,6 +684,8 @@ public class Aplicacion {
                             contadorEntropia++;
                         }
                     }
+                    contadorEntropia = contadorEntropia/200;
+                    contadorEntropiaFinal = contadorEntropiaFinal + contadorEntropia;
                 }
             }
         }
@@ -696,8 +699,7 @@ public class Aplicacion {
          * - contadorEntropia
          * - semiBloqueados
          */
-//		System.out.println(indice +" "+ cantBloqueados +" "+ ((contadorEntropia/45)/2));
-        System.out.println(((contadorEntropia / 45) / 2));
+		System.out.println(indice +" "+ cantBloqueados +" "+ ((contadorEntropiaFinal/45)/2));
     }
 
     /**
